@@ -27,7 +27,7 @@ class QuickSort:
                 s += 1
                 e -= 1
 
-        # Now the pivot is at correct index, now sort the two halfs
+        # Now that the pivot is at correct index, we sort the two halfs
         self.sort(nums, low, e)
         self.sort(nums, s, high)
 
