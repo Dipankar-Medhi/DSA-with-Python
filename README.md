@@ -83,3 +83,22 @@ Data Structure & Algorithm questions with Python.
   - [String Permutation](Recursion/strPermutation.py)
   - [Subsets](Recursion/subsets.py)
 
+- Dynamic Programming
+  - [Count of subset sum](Educative/dynamic_programming/count-of-subset-sum.py)
+  - [Equal subset sum partition](Educative/dynamic_programming/equal-subset-sum-partition.py)
+  - [Longest common substring](Educative/dynamic_programming/longest-common-substring.py)
+  - [Longest increasing subsequence](Educative/dynamic_programming/longest-increasing-subsequence.py)
+  - [Longest palindromic subsequence](Educative/dynamic_programming/longest-palindromic-subsequence.py)
+  - [Longest palindromic substring](Educative/dynamic_programming/longest-palindromic-substring.py)
+  - [Maximum sum increasing subsequence](Educative/dynamic_programming/max-sum-increasing-subsequence.py)
+  - [Minimum deletion insertion](Educative/dynamic_programming/min-deletion-insertion.py)
+  - [Minimum jumps to reach end](Educative/dynamic_programming/min-jumps-to-reach-end.py)
+  - [Minimum coin change](Educative/dynamic_programming/minimum-coin-change.py)
+  - [Minimum subset sum difference](Educative/dynamic_programming/minimum-subset-sum-difference.py)
+  - [Number factors](Educative/dynamic_programming/number-factors.py)
+  - [Staircase](Educative/dynamic_programming/staircase.py)
+  - [Subset sum](Educative/dynamic_programming/subset-sum.py)
+  - [Target sum](Educative/dynamic_programming/target-sum.py) [space optimized](Educative/dynamic_programming/target_sum_space_optimized.py)
+  - [Unbounded knapsack](Educative/dynamic_programming/unbounded-knapsack.py)
+  
+
