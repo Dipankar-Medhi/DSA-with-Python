@@ -1,5 +1,10 @@
 import heapq
 
+""" 
+Max heap -> store the smaller half
+Min heap -> store the larger half
+"""
+
 
 class MedianOfAStream:
     maxHeap = []  # 1st half

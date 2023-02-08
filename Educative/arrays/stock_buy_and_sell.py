@@ -11,4 +11,19 @@ def stock(prices):
     return maxProfit
 
 
+# or
+def max_profit(prices):
+    n = len(prices)
+    min_price = float("inf")
+    max_profit = 0
+    for i in range(n):
+        if prices[i] < min_price:
+            min_price = prices[i]
+        else:
+            max_profit = max(max_profit, prices[i] - min_price)
+    return max_profit
+
+
 print(stock([7, 1, 5, 3, 6, 4]))
+
+print(max_profit([7, 1, 5, 3, 6, 4]))
