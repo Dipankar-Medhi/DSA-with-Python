@@ -28,6 +28,18 @@ Data Structure & Algorithm questions with Python.
   - [String anagram](Educative/sliding-window/string-anagram.py)
   - [Words concatenation](Educative/sliding-window/words-concatenation.py)
 
+- Two Pointers
+  - [Comparing strings with backspaces](Educative/two-pointers/comparing-strings-with-backspaces.py)
+  - [Minimum window sort](Educative/two-pointers/minimum-window-sort.py)
+  - [Pair with target sum](Educative/two-pointers/pair-with-target-sum.py)
+  - [Quadrapule sum to target](Educative/two-pointers/quadrapule-sum-to-target.py)
+  - [Remove duplicates](Educative/two-pointers/remove-duplicates.py)
+  - [Squaring sorted array](Educative/two-pointers/squaring-sorted-arr.py)
+  - [Subarray with product less than target](Educative/two-pointers/subarrays-with-product-less-than-target.py)
+  - [Tripet sum close to target](Educative/two-pointers/triplet-sum-close-to-target.py)
+  - [Triplets sum equal to zero](Educative/two-pointers/triplets-sum-equal-to-zero.py)
+  - [Triplets with smaller sum](Educative/two-pointers/triplets-with-smaller-sum.py)
+
 - Binary Search
   - [Binary search](Educative/binary-search/binary-search.py)
   - [Bitonic arr maximum](Educative/binary-search/bitonic-arr-maximum.py)
@@ -54,7 +66,28 @@ Data Structure & Algorithm questions with Python.
   - [Top view](Educative/bfs/top-view.py)
   - [Zigzag traversal](Educative/bfs/zigzag-traversal.py)
 
+- Tree (DFS)
+  - [All path for a sum](Educative/dfs/all-path-for-a-sum.py)
+  - [Maximum depth](Educative/dfs/max-depth.py)
+  - [Maximum in a Binary Tree](Educative/dfs/maximum-in-bt.py)
+  - [Path sum](Educative/dfs/path-sum.py)
+  - [Path with given sequence](Educative/dfs/path-with-given-sequence.py)
+  - [Path with maximum sum](Educative/dfs/path-with-max-sum.py)
+  - [Size of Binary Tree](Educative/dfs/size-of-bt.py)
+  - [Sum of path numbers](Educative/dfs/sum-of-path-numbers.py)
+  - [Symmetric tree](Educative/dfs/symmetric-tree.py)
+  - [Tree diameter](Educative/dfs/tree-diameter.py)
 
+
+- Linked List
+  - [Cycle in circular array](Educative/Linked%20List/cycle-in-circular-arr.py)
+  - [Happy number](Educative/Linked%20List/happy-number.py)
+  - [Linked List cycle length](Educative/Linked%20List/linked-list-cycle-length.py)
+  - [Middle of linked list](Educative/Linked%20List/middle-of-linked-list.py)
+  - [Palindrome in a linked list](Educative/Linked%20List/palindrome-in-a-linkedlist.py)
+  - [Rearrange a linked list](Educative/Linked%20List/rearrange-a-linkedlist.py)
+  - [Reverse a linked list](Educative/Linked%20List/reverse-a-linked-list.py)
+  - [Reverse a sublist](Educative/Linked%20List/reverse-a-sublist.py)
 
 
 - Sorting
@@ -76,7 +109,31 @@ Data Structure & Algorithm questions with Python.
   - [Quick Sort](https://github.com/Dipankar-Medhi/DSA-with-Python/tree/master/Sorting/QuickSort.py)
   - [Merge Sort](https://github.com/Dipankar-Medhi/DSA-with-Python/tree/master/Sorting/mergeSort.py)
 
+- Topological Sort
+  - [Topological sort](Educative/topological-sort/topological-sort.py)
+  - [Minimum height of tree](Educative/topological-sort/minimum-height-tree.py)
+  - [Task Scheduling](Educative/topological-sort/task-scheduling.py)
+  - [Task scheduling order](Educative/topological-sort/task-scheduling-order.py)
 
+- Heap
+  - [K closest points to origin](Educative/heap/k-closest-points-to-origin.py)
+  - [K frequent numbers](Educative/heap/k-frequent-numbers.py)
+  - [Kth smallest numbers](Educative/heap/kth-smallest-number.py)
+  - [Maximum capital](Educative/heap/max-capital.py)
+  - [Median of number stream](Educative/heap/median-of-number-stream.py)
+  - [Top K largest numbers](Educative/heap/top-k-largest-numbers.py)
+  
+- Merge Intervals
+  - [Conflicting appointments](Educative/merge-intervals/conflicting-appointments.py)
+  - [Employee free time](Educative/merge-intervals/employee-free-time.py)
+  - [Insert interval](Educative/merge-intervals/insert-interval.py)
+  - [Maximum CPU load](Educative/merge-intervals/maximum-cpu-load.py)
+  - [Merge Overlapping intervals](Educative/merge-intervals/merge-overlapping-intervals.py)
+  - [Minimum meeting rooms](Educative/merge-intervals/minimum-meeting-rooms.py)
+
+- Trie
+  - [Trie](Educative/trie/trie.py)
+  - [Suffix tree](Educative/trie/suffix-trie.py)
 
 - Recursion]
   - [Skip String](Educative/../Recursion/skipString.py)
