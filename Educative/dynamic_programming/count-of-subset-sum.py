@@ -2,6 +2,7 @@ def count_of_subset_sum(nums, sum):
     n = len(nums)
     dp = [[0 for _ in range(sum + 1)] for _ in range(n)]
     print(dp)
+
     # 1st column == 0 can always be made with empty subarr
     for i in range(n):
         dp[i][0] = 1
