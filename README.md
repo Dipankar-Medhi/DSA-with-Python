@@ -4,6 +4,9 @@ Data Structure & Algorithm questions with Python.
 
 ## Topics
 
+- [Bitwise](Bitwise/)
+  - [Number 1 bits](Bitwise/number_1_bits.py)
+
 - Arrays
   -  [Find least common number](Educative/arrays/find_least_common_number.py)
   -  [Find low and high index](Educative/arrays/find_low_&_high_index.py)
