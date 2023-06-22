@@ -6,7 +6,15 @@ Data Structure & Algorithm questions with Python.
 
 - [Bitwise](Bitwise/)
   - [Number 1 bits](Bitwise/number_1_bits.py)
-
+  - [Reverse bits](Bitwise/reverse_bits.py)
+  - [Single Number](Bitwise/single_number.py)
+  - [Power of 2](Bitwise/power_of_two.py)
+    
+    ```
+    Multiply with 2 = n << 1 
+    Multiply with 4 = n << 2
+    Divide with 2 = n >> 1
+    ```
 - Arrays
   -  [Find least common number](Educative/arrays/find_least_common_number.py)
   -  [Find low and high index](Educative/arrays/find_low_&_high_index.py)
@@ -65,8 +73,6 @@ Data Structure & Algorithm questions with Python.
   - [Selection Sort](https://github.com/Dipankar-Medhi/DSA-with-Python/tree/master/Sorting/SelectionSort.py)
   - [Insertion Sort](https://github.com/Dipankar-Medhi/DSA-with-Python/tree/master/Sorting/InsertionSort.py)
   - [Binary Sort](https://github.com/Dipankar-Medhi/DSA-with-Python/tree/master/Sorting/BinarySort.py)
-
-
   - [CyclicSort](https://github.com/Dipankar-Medhi/DSA-with-Python/tree/master/Sorting/cyclicSort.py)
     - [Find all duplicates numbers](Educative/cyclic-sort/find-all-duplicate-nums.py)
     - [Find all missing numbers](Educative/cyclic-sort/find-all-missing-numbers.py)
@@ -81,7 +87,7 @@ Data Structure & Algorithm questions with Python.
 
 
 
-- Recursion]
+- Recursion
   - [Skip String](Educative/../Recursion/skipString.py)
   - [String Permutation](Recursion/strPermutation.py)
   - [Subsets](Recursion/subsets.py)

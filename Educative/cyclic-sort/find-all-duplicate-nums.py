@@ -15,4 +15,4 @@ def find_duplicate(nums):
     return -1
 
 
-print(find_duplicate([1, 4, 5, 3, 2]))
+print(find_duplicate([1, 2, 5, 5, 2]))

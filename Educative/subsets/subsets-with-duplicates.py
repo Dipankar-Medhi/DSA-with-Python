@@ -24,4 +24,5 @@ def find_subsets(nums):
     return subsets
 
 
+
 print(find_subsets([1, 2, 2]))
