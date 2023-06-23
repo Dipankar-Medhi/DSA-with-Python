@@ -1,8 +1,6 @@
-from inspect import findsource
-
-
 def findHappyNumber(num):
     slow, fast = num, num
+    
 
     while True:
         slow = findSquare(slow)

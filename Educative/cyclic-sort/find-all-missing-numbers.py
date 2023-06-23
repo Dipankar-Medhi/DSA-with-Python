@@ -5,6 +5,7 @@ def findAllMissingNumbers(arr):
     while i < len(arr):
         # correct index
         j = arr[i] - 1  # numbers are 1 to n
+        
         if arr[i] != arr[j]:
             arr[i], arr[j] = arr[j], arr[i]
         else:

@@ -1,5 +1,6 @@
 def findCorruptPair(arr):
     i = 0
+    # sort the arr
     while i < len(arr):
         j = arr[i] - 1
         if arr[i] != arr[j]:

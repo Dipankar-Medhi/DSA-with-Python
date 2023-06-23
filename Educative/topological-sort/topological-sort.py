@@ -1,5 +1,5 @@
 from collections import deque
-
+"""
 
 def topological_sort(vertices, edges):
     sortedOrder = []
@@ -48,7 +48,7 @@ def topological_sort(vertices, edges):
 
 
 print(topological_sort(4, [[3, 2], [3, 0], [2, 0], [2, 1]]))
-
+"""
 
 """
     class Solution:
@@ -83,3 +83,52 @@ print(topological_sort(4, [[3, 2], [3, 0], [2, 0], [2, 1]]))
         return stack  
 
 """
+
+from collections import deque
+
+def topological_sort(graph):
+    # Step 1: Initialize variables
+    result = []  # Stores the sorted nodes
+    incoming_edges = {node: 0 for node in graph}  # Count of incoming edges for each node
+    queue = deque()  # Queue to store nodes with no incoming edges
+
+    # Step 2: Calculate incoming edges for each node
+    for node in graph:
+        for neighbor in graph[node]:
+            incoming_edges[neighbor] += 1
+
+    # Step 3: Find nodes with no incoming edges and add them to the queue
+    for node in graph:
+        if incoming_edges[node] == 0:
+            queue.append(node)
+
+    # Step 4: Process the nodes in the queue
+    while queue:
+        node = queue.popleft()
+        result.append(node)
+
+        # Step 5: Remove the node and update incoming edges of its neighbors
+        for neighbor in graph[node]:
+            incoming_edges[neighbor] -= 1
+            if incoming_edges[neighbor] == 0:
+                queue.append(neighbor)
+
+    # Step 6: Check for cycles
+    if len(result) != len(graph):
+        # If there are cycles, the graph is not a directed acyclic graph (DAG)
+        return []
+
+    return result
+
+
+# Example usage
+graph = {
+    'A': ['B', 'C'],
+    'B': ['D'],
+    'C': ['D'],
+    'D': ['E'],
+    'E': []
+}
+
+sorted_nodes = topological_sort(graph)
+print(sorted_nodes)
