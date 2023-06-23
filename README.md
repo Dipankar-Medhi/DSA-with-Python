@@ -109,5 +109,11 @@ Data Structure & Algorithm questions with Python.
   - [Subset sum](Educative/dynamic_programming/subset-sum.py)
   - [Target sum](Educative/dynamic_programming/target-sum.py) [space optimized](Educative/dynamic_programming/target_sum_space_optimized.py)
   - [Unbounded knapsack](Educative/dynamic_programming/unbounded-knapsack.py)
+
+
+## Questions by Company
+
+### AirBNB
+- [Pour Water](Leetcode/pour_water.py)
   
 
