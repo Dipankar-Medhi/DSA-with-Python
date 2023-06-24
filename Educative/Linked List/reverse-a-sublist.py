@@ -32,7 +32,7 @@ def reverseSublist(head, p, q):
         curr = curr.next
         i += 1
 
-    print(prev.value, curr.value)
+        print(f"prev: {prev.value}, curr: {curr.value}")
     # there are 3 parts, 1 till p-1, 2nd between p and q, and 3rd after q
     last_node_of_first_part = prev
     # after reversing the LinkedList 'current' will become the last node of the sub-list
@@ -47,7 +47,7 @@ def reverseSublist(head, p, q):
         prev = curr
         curr = next
         i += 1
-
+    print(f"prev2: {prev.value}, curr2: {curr.value}")
     # connect with the first part
     if last_node_of_first_part is not None:
         # 'prev' is now the first node of the sub-list

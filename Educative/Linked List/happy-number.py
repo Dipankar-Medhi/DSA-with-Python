@@ -1,6 +1,3 @@
-from inspect import findsource
-
-
 def findHappyNumber(num):
     slow, fast = num, num
 
@@ -19,7 +16,7 @@ def findSquare(num):
 
     while num > 0:
         digit = num % 10
-        summ += digit ** 2
+        summ += digit**2
         num //= 10
     return summ
 
