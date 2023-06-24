@@ -18,3 +18,29 @@ def min_coin_change(denominations, total):
 
 
 print(min_coin_change([1, 2, 3], 7))
+
+# -----------------------Top Down---------------------------------- #
+
+
+def min_coin_change2(denominations, total, cache):
+    if total == 0:
+        return 0
+
+    if total in cache:
+        return cache[total]
+
+    min_coins = float("inf")
+
+    for denomination in denominations:
+        if denomination <= total:
+            min_coins = min(
+                min_coins,
+                min_coin_change2(denominations, total - denomination, cache) + 1,
+            )
+
+    cache[total] = min_coins
+
+    return min_coins
+
+
+print(min_coin_change2([1, 2, 3], 5, {}))

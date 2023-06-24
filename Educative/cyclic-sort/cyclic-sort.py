@@ -1,3 +1,6 @@
+# Time complexity = O(n)
+# algorithm interats oer the array once.
+
 def cyclicSort(arr):
     i = 0
     while i < len(arr):

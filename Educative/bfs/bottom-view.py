@@ -39,7 +39,6 @@ def bottom_view(root):
 root = TreeNode(1)
 root.left = TreeNode(7)
 root.left.left = TreeNode(4)
-root.left.right = TreeNode(6)
 root.right = TreeNode(9)
 root.right.left = TreeNode(2)
 root.right.right = TreeNode(9)
