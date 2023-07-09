@@ -1,83 +1,70 @@
-def bt_to_DLL(root):
-    prev, head = None, None
+# Definition for a binary tree node.
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
 
-    def convertToDLL(root):
 
-        if root is None:
+# Definition for a doubly-linked list node.
+class ListNode:
+    def __init__(self, val=0, prev=None, next=None):
+        self.val = val
+        self.prev = prev
+        self.next = next
+
+
+class Solution:
+    def binaryToDoublyLinkedList(self, root: TreeNode) -> ListNode:
+        if not root:
             return None
 
-        convertToDLL(root.left)
-        if prev == None:
-            head = root
-        # moving prev forward
+        # recursively convert left subtree
+        left_head = self.binaryToDoublyLinkedList(root.left)
+
+        # create doubly linked list node for current node
+        curr_node = ListNode(root.val)
+
+        if left_head:
+            # set current node's left pointer to last node of left subtree
+            left_tail = left_head
+            while left_tail.next:
+                left_tail = left_tail.next
+            curr_node.prev = left_tail
+            left_tail.next = curr_node
+
+        # recursively convert right subtree
+        right_head = self.binaryToDoublyLinkedList(root.right)
+
+        if right_head:
+            # set current node's right pointer to first node of right subtree
+            curr_node.next = right_head
+            right_head.prev = curr_node
+
+        # return head of doubly linked list
+        if left_head:
+            return left_head
         else:
-            root.left = prev
-            prev.right = root
-
-        prev = root
-        convertToDLL(root.right)
+            return curr_node
 
 
-# ---------------
-# merge(fuse) two sorted linked lists
-def concatenate_lists(head1, head2):
-    if head1 is None:
-        return head2
-    if head2 is None:
-        return head1
+# example usage
+if __name__ == "__main__":
+    # create a sample binary tree
+    root = TreeNode(4)
+    root.left = TreeNode(2)
+    root.left.left = TreeNode(1)
+    root.left.right = TreeNode(3)
+    root.right = TreeNode(5)
+    root.right.right = TreeNode(6)
 
-    # use left for previous.
-    # use right for next.
-    tail1 = head1.left
-    tail2 = head2.left
+    # convert binary tree to doubly linked list
+    solution = Solution()
+    head = solution.binaryToDoublyLinkedList(root)
 
-    tail1.right = head2
-    head2.left = tail1
-
-    head1.left = tail2
-    tail2.right = head1
-    return head1
-
-
-def convert_to_linked_list_rec(root):
-    if root is None:
-        return None
-
-    list1 = convert_to_linked_list_rec(root.left)
-    list2 = convert_to_linked_list_rec(root.right)
-
-    root.left = root.right = root
-    result = concatenate_lists(list1, root)
-    result = concatenate_lists(result, list2)
-
-    return result
-
-
-def convert_to_linked_list(root):
-    head = convert_to_linked_list_rec(root)
-    if head.left is not None:
-        head.left.right = None
-        head.left = None
-    return head
-
-
-def get_list(head):
-    r = []
-    if head is None:
-        return r
-
-    temp = head
-    while True:
-        r.append(temp.data)
-        temp = temp.right
-        if temp is None:
-            break
-
-    return r
-
-
-data = [100, 50, 200, 25, 75, 350, 30, 60]
-root = create_BST(data)
-head = convert_to_linked_list(root)
-v = get_list(head)
-print_list(v)
+    # print out the doubly linked list
+    node = head
+    while node:
+        print(node.val, end=" ")
+        node = node.next
+    print()

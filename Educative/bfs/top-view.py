@@ -9,6 +9,14 @@ class TreeNode:
 
 
 def top_view(root):
+    """
+    Given the root of a binary tree, returns a list of the nodes visible from the top view of the tree from left to right.
+
+    :param root: The root node of the binary tree.
+    :type root: TreeNode
+    :return: A list of the nodes visible from the top of the tree.
+    :rtype: List[int]
+    """
     result = []
     views = {}
     queue = deque()
@@ -37,10 +45,12 @@ def top_view(root):
     return result
 
 
-root = TreeNode(1)
-root.left = TreeNode(7)
-root.right = TreeNode(9)
-root.right.left = TreeNode(2)
-root.right.right = TreeNode(9)
+node = TreeNode(1)
+node.left = TreeNode(2)
+node.right = TreeNode(3)
+node.left.left = TreeNode(4)
+node.left.right = TreeNode(5)
+node.right.left = TreeNode(6)
+node.right.right = TreeNode(7)
 
-print(top_view(root))
+print(top_view(node))

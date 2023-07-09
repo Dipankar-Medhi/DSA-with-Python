@@ -22,6 +22,10 @@ Data Structure & Algorithm questions with Python.
   -  [Rotate array by n](Educative/arrays/rotate_array_by_n.py)
   -  [Stock buy and sell](Educative/arrays/stock_buy_and_sell.py)
 
+- Heaps
+  - [Min heap](Heaps/min_heap.py)
+  - [Max heap](Heaps/max_heap.py)
+
 - Sliding Window
   - [Contains duplicate 2](Educative/sliding-window/contains-duplicate2.py)
   - [Find average sum of subarray of size k](Educative/sliding-window/find-avg-sum-of-subarr-of-size-k.py)
